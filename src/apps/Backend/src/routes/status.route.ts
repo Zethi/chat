@@ -3,5 +3,8 @@ import { StatusGetController } from "../controllers/StatusGetController";
 
 export function register(router: Router): void {
   const statusController = new StatusGetController();
-  router.get("/status", (request: Request, response: Response) => statusController);
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
+  router.get("/status", async (request: Request, response: Response) => {
+    await statusController.run(request, response);
+  });
 }

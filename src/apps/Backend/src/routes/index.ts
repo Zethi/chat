@@ -1,9 +1,9 @@
 import { type Router } from "express";
-import glob from "glob";
+import { globSync } from "glob";
 
 export function registerRoutes(router: Router): void {
   try {
-    const routes = glob.sync(__dirname.replace(/\\/g, "/") + "/**/*.route.*");
+    const routes = globSync(__dirname.replace(/\\/g, "/") + "/**/*.route.*");
     routes.forEach(route => {
       register(route, router);
     });

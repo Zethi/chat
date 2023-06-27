@@ -24,6 +24,7 @@ export class Server {
     this.express.use(helmet.frameguard({ action: "deny" }));
 
     const router = Router();
+    this.express.use(router);
     registerRoutes(router);
   }
 
