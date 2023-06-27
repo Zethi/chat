@@ -5,9 +5,10 @@
   "author": "Zethi <diego1900196@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "src/apps/*"
-  ],
+  "workspaces": {
+    "packages": ["src/apps/*"],
+    "nohoist": ["**/@types/**"]
+  },
   "scripts": {
     "prepare": "husky install"
   },
