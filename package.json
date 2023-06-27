@@ -15,7 +15,8 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "test:backend:features": "NODE_ENV=test cucumber-js -p backend"
+    "test:backend:features": "NODE_ENV=test cucumber-js -p backend",
+    "start:backend": "yarn workspace backend start"
   },
   "dependencies": {
     "typescript": "*"
