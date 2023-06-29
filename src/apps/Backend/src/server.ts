@@ -1,12 +1,8 @@
-import { json, urlencoded } from "body-parser";
-
 import express, { Router } from "express";
-// import Router from "express-promise-router";
-
-import helmet from "helmet";
 import type * as http from "http";
+import { json, urlencoded } from "body-parser";
+import helmet from "helmet";
 import { registerRoutes } from "./routes";
-// import { registerRoutes } from "./routes";
 
 export class Server {
   private readonly express: express.Express;
