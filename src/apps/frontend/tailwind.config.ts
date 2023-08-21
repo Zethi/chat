@@ -12,6 +12,12 @@ const config: Config = {
       turquese: "#24786D",
       white: colors.white,
       black: colors.black
+    },
+    keyframes: {
+      back: {
+        "50%": { transform: "translate(-0.45rem)" },
+        "100%": { transform: "translate(0rem)" }
+      }
     }
   },
   plugins: []
