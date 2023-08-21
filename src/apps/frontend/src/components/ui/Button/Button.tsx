@@ -93,7 +93,7 @@ export function Button({
   const defaultStyles = `${borderRadius} ${margins} ${colors} ${animation}`;
 
   return href !== undefined ? (
-    <Link href={href} prefetch={prefetch} className={`${defaultStyles} ${styleClassNames}`}>
+    <Link href={href} prefetch={prefetch} className={`${defaultStyles} ${styleClassNames} text-center`}>
       {children}
     </Link>
   ) : (
