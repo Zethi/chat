@@ -21,7 +21,7 @@ export default function Home(): any {
         >
           Log in
         </Button>
-        <Button color="white" size="full" borderRadiusSize="md" styleClassNames="font-bold md:w-56">
+        <Button href="/signup" color="white" size="full" borderRadiusSize="md" styleClassNames="font-bold md:w-56">
           Sign up with mail
         </Button>
       </div>
