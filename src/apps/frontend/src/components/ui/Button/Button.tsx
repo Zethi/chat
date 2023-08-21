@@ -55,21 +55,23 @@ function getColorPresets(color: ButtonColors): string {
   }
 }
 
-function getOppositeAnimationColor(color: ButtonColors): string {
+function getOppositeBackgroundColor(color: ButtonColors): string {
   switch (color) {
     case "turquese":
-      return "#19544d";
+      return "hover:bg-[#19544d]";
     case "white":
-      return "#fffff";
+      return "hover:bg-[#d6d6d6]";
     default:
       return "";
   }
 }
 
-function getAnimationPresets(animationType: ButtonAnimationTypes, color: ButtonColors): string {
+function getAnimationPresets(animationType: ButtonAnimationTypes, actualColor: ButtonColors): string {
+  const oppositeHoverBackgroundColor = getOppositeBackgroundColor(actualColor);
+
   switch (animationType) {
     case "normal":
-      return `duration-300 hover:bg-[${getOppositeAnimationColor(color)}]`;
+      return `duration-300 ${oppositeHoverBackgroundColor}`;
     default:
       return "";
   }
