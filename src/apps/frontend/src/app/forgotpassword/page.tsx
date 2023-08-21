@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/Button";
 export default function ForgotPassword(): any {
   return (
     <main className="px-4 md:px-0">
-      <div className="my-4 w-full pl-6 duration-300 ease-in-out hover:animate-[back_1s_ease-in-out_infinite] ">
+      <div className="my-4 w-full duration-300 ease-in-out hover:animate-[back_1s_ease-in-out_infinite] md:pl-6">
         <Link href="/login">
           <Image src="/assets/icons/Back.svg" width={46} height={46}></Image>
         </Link>
@@ -18,7 +18,7 @@ export default function ForgotPassword(): any {
         </p>
       </div>
 
-      <div className="mt-16 flex w-full justify-center">
+      <div className="mt-16 flex w-full justify-center md:mt-12">
         <div className="w-full md:flex md:w-96 md:flex-col md:items-center md:border md:p-8">
           <div className="flex w-full flex-col">
             <p className="text-turquese">Your account email</p>
